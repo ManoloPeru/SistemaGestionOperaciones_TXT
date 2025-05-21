@@ -1,26 +1,18 @@
+//#include "frmPrincipal.h" 
+#include "frmLogin.h" 
+
 using namespace System;
-using namespace SistemaGestionOperacionesModel;
+using namespace System::Windows::Forms;
+using namespace SistemaGestionOperacionesView;
 
-int main() {
-    // Crear dispositivos
-    Dispositivo^ dispositivo1 = gcnew Dispositivo(1,"Activo");
-    RobotManipulador^ robot = gcnew RobotManipulador();
-    robot->setIdDispositivo(dispositivo1->getIdDispositivo());
-    robot->setEstado(dispositivo1->getEstado());
-    robot->setUbicacionX(0.5f);
-    robot->setUbicacionY(1.5f);
-    robot->setUbicacionZ(2.5f);
-    robot->setCapacidadCarga(12.0f);
-    robot->setVelocidad(5.0f);
+[STAThread] //Para trabajar mas de un hilo de ejecución: SaveFile, ColunmComboBox
+void main(array <String^>^ args)
+{
+	Application::EnableVisualStyles();
+	Application::SetCompatibleTextRenderingDefault(false);
 
-    robot->Activar();
+	//frmPrincipal ventana; /*Estoy creando el objeto ventana que va a ser del tipo frmPrincipal*/
+	frmLogin ventana;
+	Application::Run(% ventana); /*Aqui estoy ejecutando la ventana inicial*/
 
-    // Crear experimento y asignar dispositivo
-    Experimento^ exp = gcnew Experimento(1, "05/05/2025", 20, "Inicializado");
-    AsignacionExperimento^ asignacion = gcnew AsignacionExperimento(10, "07/05/2025", "Principal", dispositivo1, exp);
-
-    // Reportar estado
-    robot->ReportarEstado();
-
-    return 0;
 }

@@ -51,6 +51,9 @@
     <ClInclude Include="SistemaRegistroDatos.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="Recurso.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dispositivo.cpp">
@@ -87,6 +90,9 @@
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="SistemaRegistroDatos.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Recurso.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>

@@ -20,10 +20,10 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
-    <ProjectGuid>{436E1247-E091-416F-9942-2B29AA872C24}</ProjectGuid>
+    <ProjectGuid>{95B9A8B7-9A22-C2D1-2FC6-BEF9BEF1BA57}</ProjectGuid>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
-    <RootNamespace>SistemaGestionOperacionesView</RootNamespace>
+    <RootNamespace>SistemaGestionOperacionesController</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -42,7 +42,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CLRSupport>true</CLRSupport>
@@ -81,8 +81,6 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
-      <EntryPointSymbol>main</EntryPointSymbol>
-      <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -113,62 +111,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="frmEditarRecurso.cpp" />
-    <ClCompile Include="frmLogin.cpp" />
-    <ClCompile Include="frmMantRecurso.cpp" />
-    <ClCompile Include="frmNuevoRecurso.cpp" />
-    <ClCompile Include="frmPrincipal.cpp" />
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SistemaGestionOperacionesController\SistemaGestionOperacionesController.vcxproj">
-      <Project>{95b9a8b7-9a22-c2d1-2fc6-bef9bef1ba57}</Project>
-    </ProjectReference>
     <ProjectReference Include="..\SistemaGestionOperacionesModel\SistemaGestionOperacionesModel.vcxproj">
       <Project>{fd50c0d6-7eb8-4d6e-b5cd-9a2d33983c83}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="frmEditarRecurso.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmLogin.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmMantRecurso.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmNuevoRecurso.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="frmPrincipal.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
+    <ClInclude Include="RecursoController.h" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Windows.Forms.DataVisualization" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="frmEditarRecurso.resx">
-      <DependentUpon>frmEditarRecurso.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMantRecurso.resx">
-      <DependentUpon>frmMantRecurso.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmNuevoRecurso.resx">
-      <DependentUpon>frmNuevoRecurso.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPrincipal.resx">
-      <DependentUpon>frmPrincipal.h</DependentUpon>
-    </EmbeddedResource>
+    <ClCompile Include="RecursoController.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

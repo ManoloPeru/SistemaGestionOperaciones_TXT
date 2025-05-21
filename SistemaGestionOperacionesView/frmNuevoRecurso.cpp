@@ -1,0 +1,2 @@
+#include "frmNuevoRecurso.h"
+

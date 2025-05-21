@@ -1,0 +1,3 @@
+1;Arduino AX;5;Activo
+2;Osciloscopios;2;Activo
+3;Analizadores de red;1;Activo
