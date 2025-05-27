@@ -117,9 +117,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RecursoController.h" />
+    <ClInclude Include="RobotManipuladorController.h" />
+    <ClInclude Include="SensorProximidadController.h" />
+    <ClInclude Include="SensorTemperaturaController.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="RecursoController.cpp" />
+    <ClCompile Include="RobotManipuladorController.cpp" />
+    <ClCompile Include="SensorProximidadController.cpp" />
+    <ClCompile Include="SensorTemperaturaController.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
