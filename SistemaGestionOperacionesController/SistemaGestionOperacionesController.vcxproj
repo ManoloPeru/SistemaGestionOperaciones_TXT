@@ -116,12 +116,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MotorElectricoController.h" />
     <ClInclude Include="RecursoController.h" />
     <ClInclude Include="RobotManipuladorController.h" />
     <ClInclude Include="SensorProximidadController.h" />
     <ClInclude Include="SensorTemperaturaController.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MotorElectricoController.cpp" />
     <ClCompile Include="RecursoController.cpp" />
     <ClCompile Include="RobotManipuladorController.cpp" />
     <ClCompile Include="SensorProximidadController.cpp" />

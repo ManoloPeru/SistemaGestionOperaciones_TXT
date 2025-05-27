@@ -1,5 +1,5 @@
 #include "SensorProximidadController.h"
- using namespace SistemaGestionOperacionesController;
+using namespace SistemaGestionOperacionesController;
 using namespace System::IO;
 // Constructor de la clase SensorProximidadController
 SensorProximidadController::SensorProximidadController() {
