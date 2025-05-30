@@ -2,7 +2,8 @@
 #include "frmNuevoRecurso.h"
 #include "frmEditarRecurso.h"
 
-namespace SistemaGestionOperacionesView {
+namespace SistemaGestionOperacionesView
+{
 
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -17,20 +18,21 @@ namespace SistemaGestionOperacionesView {
 	/// <summary>
 	/// Resumen de frmMantRecurso
 	/// </summary>
-	public ref class frmMantRecurso : public System::Windows::Forms::Form
+public
+	ref class frmMantRecurso : public System::Windows::Forms::Form
 	{
 	public:
 		frmMantRecurso(void)
 		{
 			InitializeComponent();
 			//
-			//TODO: agregar código de constructor aquí
+			// TODO: agregar cï¿½digo de constructor aquï¿½
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Limpiar los recursos que se estén usando.
+		/// Limpiar los recursos que se estï¿½n usando.
 		/// </summary>
 		~frmMantRecurso()
 		{
@@ -39,39 +41,59 @@ namespace SistemaGestionOperacionesView {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^ btnEliminar;
+
+	private:
+		System::Windows::Forms::Button ^ btnEliminar;
+
 	protected:
-	private: System::Windows::Forms::Button^ btnBuscar;
-	private: System::Windows::Forms::TextBox^ txtNombre;
-	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::Button^ btnEditar;
-	private: System::Windows::Forms::Button^ btnNuevo;
-	private: System::Windows::Forms::DataGridView^ dgvLista;
+	private:
+		System::Windows::Forms::Button ^ btnBuscar;
 
+	private:
+		System::Windows::Forms::TextBox ^ txtNombre;
 
+	private:
+		System::Windows::Forms::Label ^ label1;
 
-	private: System::Windows::Forms::GroupBox^ groupBox1;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ colId;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ colNombre;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ colCantidad;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ colEstado;
+	private:
+		System::Windows::Forms::Button ^ btnEditar;
 
+	private:
+		System::Windows::Forms::Button ^ btnNuevo;
+
+	private:
+		System::Windows::Forms::DataGridView ^ dgvLista;
+
+	private:
+		System::Windows::Forms::GroupBox ^ groupBox1;
+
+	private:
+		System::Windows::Forms::DataGridViewTextBoxColumn ^ colId;
+
+	private:
+		System::Windows::Forms::DataGridViewTextBoxColumn ^ colNombre;
+
+	private:
+		System::Windows::Forms::DataGridViewTextBoxColumn ^ colCantidad;
+
+	private:
+		System::Windows::Forms::DataGridViewTextBoxColumn ^ colEstado;
 
 	private:
 		/// <summary>
-		/// Variable del diseñador necesaria.
+		/// Variable del diseï¿½ador necesaria.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container ^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Método necesario para admitir el Diseñador. No se puede modificar
-		/// el contenido de este método con el editor de código.
+		/// Mï¿½todo necesario para admitir el Diseï¿½ador. No se puede modificar
+		/// el contenido de este mï¿½todo con el editor de cï¿½digo.
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle ^ dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle ^ dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			this->btnEliminar = (gcnew System::Windows::Forms::Button());
 			this->btnBuscar = (gcnew System::Windows::Forms::Button());
 			this->txtNombre = (gcnew System::Windows::Forms::TextBox());
@@ -84,15 +106,15 @@ namespace SistemaGestionOperacionesView {
 			this->colCantidad = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->colEstado = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgvLista))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize ^>(this->dgvLista))->BeginInit();
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
-			// 
+			//
 			// btnEliminar
-			// 
+			//
 			this->btnEliminar->BackColor = System::Drawing::SystemColors::ControlDarkDark;
 			this->btnEliminar->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+																   static_cast<System::Byte>(0)));
 			this->btnEliminar->ForeColor = System::Drawing::SystemColors::Control;
 			this->btnEliminar->Location = System::Drawing::Point(831, 590);
 			this->btnEliminar->Margin = System::Windows::Forms::Padding(5);
@@ -102,12 +124,12 @@ namespace SistemaGestionOperacionesView {
 			this->btnEliminar->Text = L"Eliminar";
 			this->btnEliminar->UseVisualStyleBackColor = false;
 			this->btnEliminar->Click += gcnew System::EventHandler(this, &frmMantRecurso::btnEliminar_Click);
-			// 
+			//
 			// btnBuscar
-			// 
+			//
 			this->btnBuscar->BackColor = System::Drawing::SystemColors::ControlDarkDark;
 			this->btnBuscar->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+																 static_cast<System::Byte>(0)));
 			this->btnBuscar->ForeColor = System::Drawing::SystemColors::Control;
 			this->btnBuscar->Location = System::Drawing::Point(594, 58);
 			this->btnBuscar->Margin = System::Windows::Forms::Padding(5);
@@ -117,36 +139,36 @@ namespace SistemaGestionOperacionesView {
 			this->btnBuscar->Text = L"Buscar";
 			this->btnBuscar->UseVisualStyleBackColor = false;
 			this->btnBuscar->Click += gcnew System::EventHandler(this, &frmMantRecurso::btnBuscar_Click);
-			// 
+			//
 			// txtNombre
-			// 
+			//
 			this->txtNombre->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(192)));
+																		  static_cast<System::Int32>(static_cast<System::Byte>(192)));
 			this->txtNombre->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+																 static_cast<System::Byte>(0)));
 			this->txtNombre->Location = System::Drawing::Point(164, 57);
 			this->txtNombre->Margin = System::Windows::Forms::Padding(5);
 			this->txtNombre->Name = L"txtNombre";
 			this->txtNombre->Size = System::Drawing::Size(366, 34);
 			this->txtNombre->TabIndex = 1;
-			// 
+			//
 			// label1
-			// 
+			//
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+															  static_cast<System::Byte>(0)));
 			this->label1->Location = System::Drawing::Point(10, 60);
 			this->label1->Margin = System::Windows::Forms::Padding(5, 0, 5, 0);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(113, 29);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Nombre :";
-			// 
+			//
 			// btnEditar
-			// 
+			//
 			this->btnEditar->BackColor = System::Drawing::SystemColors::ControlDarkDark;
 			this->btnEditar->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+																 static_cast<System::Byte>(0)));
 			this->btnEditar->ForeColor = System::Drawing::SystemColors::Control;
 			this->btnEditar->Location = System::Drawing::Point(571, 590);
 			this->btnEditar->Margin = System::Windows::Forms::Padding(5);
@@ -156,12 +178,12 @@ namespace SistemaGestionOperacionesView {
 			this->btnEditar->Text = L"Editar";
 			this->btnEditar->UseVisualStyleBackColor = false;
 			this->btnEditar->Click += gcnew System::EventHandler(this, &frmMantRecurso::btnEditar_Click);
-			// 
+			//
 			// btnNuevo
-			// 
+			//
 			this->btnNuevo->BackColor = System::Drawing::SystemColors::ControlDarkDark;
 			this->btnNuevo->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+																static_cast<System::Byte>(0)));
 			this->btnNuevo->ForeColor = System::Drawing::SystemColors::Control;
 			this->btnNuevo->Location = System::Drawing::Point(288, 590);
 			this->btnNuevo->Margin = System::Windows::Forms::Padding(5);
@@ -171,30 +193,29 @@ namespace SistemaGestionOperacionesView {
 			this->btnNuevo->Text = L"Nuevo";
 			this->btnNuevo->UseVisualStyleBackColor = false;
 			this->btnNuevo->Click += gcnew System::EventHandler(this, &frmMantRecurso::btnNuevo_Click);
-			// 
+			//
 			// dgvLista
-			// 
+			//
 			this->dgvLista->BackgroundColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(192)));
+																			   static_cast<System::Int32>(static_cast<System::Byte>(192)));
 			dataGridViewCellStyle1->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
 			dataGridViewCellStyle1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)),
-				static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(192)));
+																				 static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(192)));
 			dataGridViewCellStyle1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular,
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+																		System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			dataGridViewCellStyle1->ForeColor = System::Drawing::SystemColors::WindowText;
 			dataGridViewCellStyle1->SelectionBackColor = System::Drawing::SystemColors::Highlight;
 			dataGridViewCellStyle1->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
 			dataGridViewCellStyle1->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
 			this->dgvLista->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this->dgvLista->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dgvLista->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(4) {
+			this->dgvLista->Columns->AddRange(gcnew cli::array<System::Windows::Forms::DataGridViewColumn ^>(4){
 				this->colId, this->colNombre,
-					this->colCantidad, this->colEstado
-			});
+				this->colCantidad, this->colEstado});
 			dataGridViewCellStyle2->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
 			dataGridViewCellStyle2->BackColor = System::Drawing::SystemColors::Window;
 			dataGridViewCellStyle2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular,
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+																		System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			dataGridViewCellStyle2->ForeColor = System::Drawing::SystemColors::ControlText;
 			dataGridViewCellStyle2->SelectionBackColor = System::Drawing::SystemColors::Highlight;
 			dataGridViewCellStyle2->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
@@ -207,42 +228,42 @@ namespace SistemaGestionOperacionesView {
 			this->dgvLista->RowTemplate->Height = 24;
 			this->dgvLista->Size = System::Drawing::Size(1231, 402);
 			this->dgvLista->TabIndex = 6;
-			// 
+			//
 			// colId
-			// 
+			//
 			this->colId->HeaderText = L"Id";
 			this->colId->MinimumWidth = 6;
 			this->colId->Name = L"colId";
 			this->colId->Width = 125;
-			// 
+			//
 			// colNombre
-			// 
+			//
 			this->colNombre->HeaderText = L"Nombre de Recurso";
 			this->colNombre->MinimumWidth = 6;
 			this->colNombre->Name = L"colNombre";
 			this->colNombre->Width = 400;
-			// 
+			//
 			// colCantidad
-			// 
+			//
 			this->colCantidad->HeaderText = L"Cantidad";
 			this->colCantidad->MinimumWidth = 6;
 			this->colCantidad->Name = L"colCantidad";
 			this->colCantidad->Width = 120;
-			// 
+			//
 			// colEstado
-			// 
+			//
 			this->colEstado->HeaderText = L"Estado";
 			this->colEstado->MinimumWidth = 6;
 			this->colEstado->Name = L"colEstado";
 			this->colEstado->Width = 120;
-			// 
+			//
 			// groupBox1
-			// 
+			//
 			this->groupBox1->Controls->Add(this->btnBuscar);
 			this->groupBox1->Controls->Add(this->txtNombre);
 			this->groupBox1->Controls->Add(this->label1);
 			this->groupBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+																 static_cast<System::Byte>(0)));
 			this->groupBox1->Location = System::Drawing::Point(23, 21);
 			this->groupBox1->Margin = System::Windows::Forms::Padding(5);
 			this->groupBox1->Name = L"groupBox1";
@@ -250,10 +271,10 @@ namespace SistemaGestionOperacionesView {
 			this->groupBox1->Size = System::Drawing::Size(1231, 116);
 			this->groupBox1->TabIndex = 5;
 			this->groupBox1->TabStop = false;
-			this->groupBox1->Text = L"Criterios de Búsqueda";
-			// 
+			this->groupBox1->Text = L"Criterios de Bï¿½squeda";
+			//
 			// frmMantRecurso
-			// 
+			//
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1268, 673);
@@ -266,103 +287,120 @@ namespace SistemaGestionOperacionesView {
 			this->Text = L"Mantenimiento de Recursos";
 			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
 			this->Load += gcnew System::EventHandler(this, &frmMantRecurso::frmMantRecurso_Load);
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgvLista))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize ^>(this->dgvLista))->EndInit();
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
 			this->ResumeLayout(false);
-
 		}
 #pragma endregion
-	private: System::Void frmMantRecurso_Load(System::Object^ sender, System::EventArgs^ e) {
-		// Cargar los recursos en el DataGridView al iniciar el formulario
-		// Aquí deberías llamar a tu controlador para obtener la lista de recursos y llenarla en el DataGridView
-		RecursoController^ recursoController = gcnew RecursoController();
-		List<Recurso^>^ listaRecursos = recursoController->listarTodos();
-		mostrarGrilla(listaRecursos);
-	}
-	
-		   /*METODOSPERSONALES*/
-	public: void mostrarGrilla(List<Recurso^>^ listaRecursos) {
-		this->dgvLista->Rows->Clear();
-		for (int i = 0; i < listaRecursos->Count; i++) {
-			Recurso^ recurso = listaRecursos[i];
-			array<String^>^ filaGrilla = gcnew array<String^>(7);
-			filaGrilla[0] = Convert::ToString(recurso->getIdRecurso());
-			filaGrilla[1] = recurso->getNombre();
-			filaGrilla[2] = Convert::ToString(recurso->getCantidad());
-			filaGrilla[3] = recurso->getEstado();
-			this->dgvLista->Rows->Add(filaGrilla);
-		}
-		this->dgvLista->AutoGenerateColumns = false; // Desactivar la generación automática de columnas
-	}
-private: System::Void btnNuevo_Click(System::Object^ sender, System::EventArgs^ e) {
-	// Crear una nueva instancia del formulario de nuevo recurso
-	// y mostrarlo como un formulario hijo dentro del contenedor MDI
-	frmNuevoRecurso^ nuevoRecursoForm = gcnew frmNuevoRecurso();
-	nuevoRecursoForm->ShowDialog(this);
-	// Llamar al método para cargar la lista de recursos nuevamente
-	RecursoController^ recursoController = gcnew RecursoController();
-	List<Recurso^>^ listaRecursos = recursoController->listarTodos();
-	mostrarGrilla(listaRecursos);
-}
-private: System::Void btnEditar_Click(System::Object^ sender, System::EventArgs^ e) {
-	// Verificar si se ha seleccionado una fila en el DataGridView
-	if (this->dgvLista->SelectedRows->Count > 0) {
-		int filaSeleccionada = this->dgvLista->SelectedRows[0]->Index;
-		int idRecurso = Convert::ToInt32(this->dgvLista->Rows[filaSeleccionada]->Cells[0]->Value);
-		
-		RecursoController^ recursoController = gcnew RecursoController();
-		Recurso^ recursoSeleccionado = recursoController->buscarRecursoxidRecurso(idRecurso);
-		if (recursoSeleccionado == nullptr) {
-			MessageBox::Show("No se encontró el recurso seleccionado.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
-			return;
-		}
-		// Crear una nueva instancia del formulario de nuevo recurso
-		// y mostrarlo como un formulario hijo dentro del contenedor MDI
-		frmEditarRecurso^ editarRecursoForm = gcnew frmEditarRecurso(recursoSeleccionado);
-		editarRecursoForm->ShowDialog();
-		// Llamar al método para cargar la lista de recursos nuevamente
-		List<Recurso^>^ listaRecursos = recursoController->listarTodos();
-		mostrarGrilla(listaRecursos);
-	}
-	else {
-		MessageBox::Show("Por favor, seleccione un recurso para editar.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Warning);
-	}
-}
-private: System::Void btnEliminar_Click(System::Object^ sender, System::EventArgs^ e) {
-	// Verificar si se ha seleccionado una fila en el DataGridView
-	if (this->dgvLista->SelectedRows->Count > 0) {
-
-		// Preguntar al usuario si está seguro de eliminar el registro
-		System::Windows::Forms::DialogResult resultado = MessageBox::Show("¿Está seguro de que desea eliminar el registro seleccionado?",
-			"Confirmación de eliminación", MessageBoxButtons::YesNo, MessageBoxIcon::Question);
-
-		// Si el usuario selecciona "No", cancelar la operación
-		if (resultado == System::Windows::Forms::DialogResult::No) {
-			return; // Salir del evento si el usuario cancela
+	private: System::Void frmMantRecurso_Load(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			// Cargar los recursos en el DataGridView al iniciar el formulario
+			// Aquï¿½ deberï¿½as llamar a tu controlador para obtener la lista de recursos y llenarla en el DataGridView
+			RecursoController ^ recursoController = gcnew RecursoController();
+			List<Recurso ^> ^ listaRecursos = recursoController->listarTodos();
+			mostrarGrilla(listaRecursos);
 		}
 
-		int selectedRowIndex = this->dgvLista->SelectedRows[0]->Index;
-		int idRecurso = Convert::ToInt32(this->dgvLista->Rows[selectedRowIndex]->Cells[0]->Value);
-		// Crear una instancia del controlador y eliminar el recurso
-		RecursoController^ recursoController = gcnew RecursoController();
-		recursoController->eliminarRecurso(idRecurso);
-		// Actualizar la lista de recursos en el DataGridView
-		List<Recurso^>^ listaRecursos = recursoController->listarTodos();
-		mostrarGrilla(listaRecursos);
-	}
-	else {
-		MessageBox::Show("Por favor, seleccione un recurso para eliminar.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Warning);
-	}
-}
-	private: System::Void btnBuscar_Click(System::Object^ sender, System::EventArgs^ e) {
-		// Obtener el nombre del recurso a buscar
-		String^ nombreRecurso = txtNombre->Text;
-		// Crear una instancia del controlador y buscar el recurso por nombre
-		RecursoController^ recursoController = gcnew RecursoController();
-		List<Recurso^>^ listaRecursos = recursoController->buscarRecursoxNombre(nombreRecurso);
-		// Mostrar los resultados en el DataGridView
-		mostrarGrilla(listaRecursos);
-	}
-};
+		/*METODOSPERSONALES*/
+	public:	void mostrarGrilla(List<Recurso ^> ^ listaRecursos)
+		{
+			this->dgvLista->Rows->Clear();
+			for (int i = 0; i < listaRecursos->Count; i++)
+			{
+				Recurso ^ recurso = listaRecursos[i];
+				array<String ^> ^ filaGrilla = gcnew array<String ^>(7);
+				filaGrilla[0] = Convert::ToString(recurso->getIdRecurso());
+				filaGrilla[1] = recurso->getNombre();
+				filaGrilla[2] = Convert::ToString(recurso->getCantidad());
+				filaGrilla[3] = recurso->getEstado();
+				this->dgvLista->Rows->Add(filaGrilla);
+			}
+			this->dgvLista->AutoGenerateColumns = false; // Desactivar la generaciï¿½n automï¿½tica de columnas
+			this->dgvLista->AllowUserToAddRows = false;	 // Evitar que el usuario pueda agregar filas manualmente
+		}
+
+	private:System::Void btnNuevo_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			// Crear una nueva instancia del formulario de nuevo recurso
+			// y mostrarlo como un formulario hijo dentro del contenedor MDI
+			frmNuevoRecurso ^ nuevoRecursoForm = gcnew frmNuevoRecurso();
+			nuevoRecursoForm->ShowDialog(this);
+			// Llamar al mï¿½todo para cargar la lista de recursos nuevamente
+			RecursoController ^ recursoController = gcnew RecursoController();
+			List<Recurso ^> ^ listaRecursos = recursoController->listarTodos();
+			mostrarGrilla(listaRecursos);
+		}
+
+	private:System::Void btnEditar_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			// Verificar si se ha seleccionado una fila en el DataGridView
+			if (this->dgvLista->SelectedRows->Count > 0)
+			{
+				int filaSeleccionada = this->dgvLista->SelectedRows[0]->Index;
+				int idRecurso = Convert::ToInt32(this->dgvLista->Rows[filaSeleccionada]->Cells[0]->Value);
+
+				RecursoController ^ recursoController = gcnew RecursoController();
+				Recurso ^ recursoSeleccionado = recursoController->buscarRecursoxidRecurso(idRecurso);
+				if (recursoSeleccionado == nullptr)
+				{
+					MessageBox::Show("No se encontrï¿½ el recurso seleccionado.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+					return;
+				}
+				// Crear una nueva instancia del formulario de nuevo recurso
+				// y mostrarlo como un formulario hijo dentro del contenedor MDI
+				frmEditarRecurso ^ editarRecursoForm = gcnew frmEditarRecurso(recursoSeleccionado);
+				editarRecursoForm->ShowDialog();
+				// Llamar al mï¿½todo para cargar la lista de recursos nuevamente
+				List<Recurso ^> ^ listaRecursos = recursoController->listarTodos();
+				mostrarGrilla(listaRecursos);
+			}
+			else
+			{
+				MessageBox::Show("Por favor, seleccione un recurso para editar.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Warning);
+			}
+		}
+
+	private:System::Void btnEliminar_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			// Verificar si se ha seleccionado una fila en el DataGridView
+			if (this->dgvLista->SelectedRows->Count > 0)
+			{
+
+				// Preguntar al usuario si estï¿½ seguro de eliminar el registro
+				System::Windows::Forms::DialogResult resultado = MessageBox::Show("ï¿½Estï¿½ seguro de que desea eliminar el registro seleccionado?",
+																				  "Confirmaciï¿½n de eliminaciï¿½n", MessageBoxButtons::YesNo, MessageBoxIcon::Question);
+
+				// Si el usuario selecciona "No", cancelar la operaciï¿½n
+				if (resultado == System::Windows::Forms::DialogResult::No)
+				{
+					return; // Salir del evento si el usuario cancela
+				}
+
+				int selectedRowIndex = this->dgvLista->SelectedRows[0]->Index;
+				int idRecurso = Convert::ToInt32(this->dgvLista->Rows[selectedRowIndex]->Cells[0]->Value);
+				// Crear una instancia del controlador y eliminar el recurso
+				RecursoController ^ recursoController = gcnew RecursoController();
+				recursoController->eliminarRecurso(idRecurso);
+				// Actualizar la lista de recursos en el DataGridView
+				List<Recurso ^> ^ listaRecursos = recursoController->listarTodos();
+				mostrarGrilla(listaRecursos);
+			}
+			else
+			{
+				MessageBox::Show("Por favor, seleccione un recurso para eliminar.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Warning);
+			}
+		}
+
+	private:System::Void btnBuscar_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			// Obtener el nombre del recurso a buscar
+			String ^ nombreRecurso = txtNombre->Text;
+			// Crear una instancia del controlador y buscar el recurso por nombre
+			RecursoController ^ recursoController = gcnew RecursoController();
+			List<Recurso ^> ^ listaRecursos = recursoController->buscarRecursoxNombre(nombreRecurso);
+			// Mostrar los resultados en el DataGridView
+			mostrarGrilla(listaRecursos);
+		}
+	};
 }

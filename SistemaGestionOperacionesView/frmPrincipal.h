@@ -1,5 +1,6 @@
 #pragma once
 #include "frmMantRecurso.h"
+#include "frmMantRobotManipulador.h"
 
 namespace SistemaGestionOperacionesView {
 
@@ -39,6 +40,7 @@ namespace SistemaGestionOperacionesView {
 	protected:
 	private: System::Windows::Forms::ToolStripMenuItem^ mantenimientoToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ recursoToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ robotManipuladorToolStripMenuItem;
 
 	private:
 		/// <summary>
@@ -56,6 +58,7 @@ namespace SistemaGestionOperacionesView {
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->mantenimientoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->recursoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->robotManipuladorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -73,7 +76,10 @@ namespace SistemaGestionOperacionesView {
 			// 
 			// mantenimientoToolStripMenuItem
 			// 
-			this->mantenimientoToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->recursoToolStripMenuItem });
+			this->mantenimientoToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->recursoToolStripMenuItem,
+					this->robotManipuladorToolStripMenuItem
+			});
 			this->mantenimientoToolStripMenuItem->Name = L"mantenimientoToolStripMenuItem";
 			this->mantenimientoToolStripMenuItem->Size = System::Drawing::Size(185, 35);
 			this->mantenimientoToolStripMenuItem->Text = L"Mantenimiento";
@@ -81,9 +87,16 @@ namespace SistemaGestionOperacionesView {
 			// recursoToolStripMenuItem
 			// 
 			this->recursoToolStripMenuItem->Name = L"recursoToolStripMenuItem";
-			this->recursoToolStripMenuItem->Size = System::Drawing::Size(224, 36);
+			this->recursoToolStripMenuItem->Size = System::Drawing::Size(301, 36);
 			this->recursoToolStripMenuItem->Text = L"Recurso";
 			this->recursoToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::recursoToolStripMenuItem_Click);
+			// 
+			// robotManipuladorToolStripMenuItem
+			// 
+			this->robotManipuladorToolStripMenuItem->Name = L"robotManipuladorToolStripMenuItem";
+			this->robotManipuladorToolStripMenuItem->Size = System::Drawing::Size(301, 36);
+			this->robotManipuladorToolStripMenuItem->Text = L"Robot Manipulador";
+			this->robotManipuladorToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::robotManipuladorToolStripMenuItem_Click);
 			// 
 			// frmPrincipal
 			// 
@@ -110,5 +123,12 @@ namespace SistemaGestionOperacionesView {
 		recursoForm->MdiParent = this; // Establecer el formulario principal como padre
 		recursoForm->Show(); // Mostrar el formulario hijo
 	}
-	};
+	private: System::Void robotManipuladorToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		// Crear una nueva instancia del formulario 
+		// y mostrarlo como un formulario hijo dentro del contenedor MDI
+		frmMantRobotManipulador^ robotForm = gcnew frmMantRobotManipulador();
+		robotForm->MdiParent = this; // Establecer el formulario principal como padre
+		robotForm->Show(); // Mostrar el formulario hijo
+	}
+};
 }

@@ -116,7 +116,9 @@
     <ClCompile Include="frmEditarRecurso.cpp" />
     <ClCompile Include="frmLogin.cpp" />
     <ClCompile Include="frmMantRecurso.cpp" />
+    <ClCompile Include="frmMantRobotManipulador.cpp" />
     <ClCompile Include="frmNuevoRecurso.cpp" />
+    <ClCompile Include="frmNuevoRobotManipulador.cpp" />
     <ClCompile Include="frmPrincipal.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -138,7 +140,13 @@
     <ClInclude Include="frmMantRecurso.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="frmMantRobotManipulador.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmNuevoRecurso.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoRobotManipulador.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmPrincipal.h">
@@ -163,8 +171,14 @@
     <EmbeddedResource Include="frmMantRecurso.resx">
       <DependentUpon>frmMantRecurso.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMantRobotManipulador.resx">
+      <DependentUpon>frmMantRobotManipulador.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNuevoRecurso.resx">
       <DependentUpon>frmNuevoRecurso.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoRobotManipulador.resx">
+      <DependentUpon>frmNuevoRobotManipulador.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.h</DependentUpon>

@@ -104,14 +104,14 @@ namespace SistemaGestionOperacionesView {
 			this->grpBoxPrincipal->Controls->Add(this->label1);
 			this->grpBoxPrincipal->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->grpBoxPrincipal->Location = System::Drawing::Point(16, 27);
+			this->grpBoxPrincipal->Location = System::Drawing::Point(14, 24);
 			this->grpBoxPrincipal->Margin = System::Windows::Forms::Padding(5);
 			this->grpBoxPrincipal->Name = L"grpBoxPrincipal";
 			this->grpBoxPrincipal->Padding = System::Windows::Forms::Padding(5);
 			this->grpBoxPrincipal->Size = System::Drawing::Size(619, 314);
 			this->grpBoxPrincipal->TabIndex = 11;
 			this->grpBoxPrincipal->TabStop = false;
-			this->grpBoxPrincipal->Text = L"Información deneral del Recurso";
+			this->grpBoxPrincipal->Text = L"Información general del Recurso";
 			// 
 			// txtCantidad
 			// 
