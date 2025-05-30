@@ -116,18 +116,28 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AsignacionExperimentoController.h" />
+    <ClInclude Include="EstacionControlController.h" />
+    <ClInclude Include="ExperimentoController.h" />
     <ClInclude Include="MotorElectricoController.h" />
     <ClInclude Include="RecursoController.h" />
     <ClInclude Include="RobotManipuladorController.h" />
     <ClInclude Include="SensorProximidadController.h" />
     <ClInclude Include="SensorTemperaturaController.h" />
+    <ClInclude Include="SistemaRegistroDatosController.h" />
+    <ClInclude Include="ValvulaNeumaticaController.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AsignacionExperimentoController.cpp" />
+    <ClCompile Include="EstacionControlController.cpp" />
+    <ClCompile Include="ExperimentoController.cpp" />
     <ClCompile Include="MotorElectricoController.cpp" />
     <ClCompile Include="RecursoController.cpp" />
     <ClCompile Include="RobotManipuladorController.cpp" />
     <ClCompile Include="SensorProximidadController.cpp" />
     <ClCompile Include="SensorTemperaturaController.cpp" />
+    <ClCompile Include="SistemaRegistroDatosController.cpp" />
+    <ClCompile Include="ValvulaNeumaticaController.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

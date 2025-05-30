@@ -12,26 +12,26 @@ namespace SistemaGestionOperacionesModel {
         int idEstacion;
         String^ estado;
         List<Dispositivo^>^ listaDispositivo;
-        Experimento^ experimento;
+        List<Experimento^>^ listaExperimento;
 
     public:
         // Constructor vacio
         EstacionControl();
 
         // Constructor con todos los parámetros
-        EstacionControl(int idEstacion, String^ estado, List<Dispositivo^>^ listaDispositivo, Experimento^ experimento);
+        EstacionControl(int idEstacion, String^ estado, List<Dispositivo^>^ listaDispositivo, List<Experimento^>^ listaExperimento);
 
         // Metodos GET
         int getIdEstacion();
         String^ getEstado();
         List<Dispositivo^>^ getListaDispositivo();
-        Experimento^ getExperimento();
+        List<Experimento^>^ getListaExperimento();
 
         // Metodos SET
         void setIdEstacion(int idEstacion);
         void setEstado(String^ estado);
         void setListaDispositivo(List<Dispositivo^>^ listaDispositivo);
-        void setExperimento(Experimento^ experimento);
+        void setListaExperimento(List<Experimento^>^ listaExperimento);
 
         //Metodos generales
         void IniciarExerimento();

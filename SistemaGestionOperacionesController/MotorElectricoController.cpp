@@ -32,7 +32,7 @@ List<MotorElectrico^>^ MotorElectricoController::listarTodos() {
 }
 
 // Método para agregar un nuevo motor eléctrico con los parámetros proporcionados
-MotorElectrico^ MotorElectricoController::buscarMotorexid(int id) {
+MotorElectrico^ MotorElectricoController::buscarMotorElectricoxId(int id) {
 	List<MotorElectrico^>^ listaMotores = listarTodos(); // Obtiene la lista de motores eléctricos
 	// Recorre la lista de motores para encontrar el motor con el ID especificado
 	for (int i = 0; i < listaMotores->Count; i++) {
@@ -45,7 +45,7 @@ MotorElectrico^ MotorElectricoController::buscarMotorexid(int id) {
 }
 
 // Método para buscar motores eléctricos por estado
-List<MotorElectrico^>^ MotorElectricoController::buscarMotorexEstado(String^ estado) {
+List<MotorElectrico^>^ MotorElectricoController::buscarMotorElectricoxEstado(String^ estado) {
 	List<MotorElectrico^>^ listaMotores = gcnew List<MotorElectrico^>(); // Aqui creo la lista vacía
 	array<String^>^ lineas = File::ReadAllLines("MotoresElectricos.txt");
 	String^ separadores = ";";
@@ -67,7 +67,7 @@ List<MotorElectrico^>^ MotorElectricoController::buscarMotorexEstado(String^ est
 }
 
 // Método para agregar un nuevo motor eléctrico con los parámetros proporcionados
-void MotorElectricoController::agregarMotor(int id, String^ estado, float potencia, float velocidadRPM) {
+void MotorElectricoController::agregarMotorElectrico(int id, String^ estado, float potencia, float velocidadRPM) {
 	// Crea un nuevo motor eléctrico con los parámetros proporcionados
 	MotorElectrico^ motorNuevo = gcnew MotorElectrico(velocidadRPM);
 	motorNuevo->setIdDispositivo(id); // Establece el ID del motor
@@ -96,7 +96,7 @@ void MotorElectricoController::escribirArchivo(List<MotorElectrico^>^ listaMotor
 }
 
 // Método para actualizar un motor eléctrico existente con los nuevos parámetros
-void MotorElectricoController::actualizarMotor(int id, String^ estado, float potencia, float velocidadRPM) {
+void MotorElectricoController::actualizarMotorElectrico(int id, String^ estado, float potencia, float velocidadRPM) {
 	List<MotorElectrico^>^ listaMotores = listarTodos(); // Obtiene la lista de motores eléctricos
 	// Busca el motor a actualizar
 	for (int i = 0; i < listaMotores->Count; i++) {
@@ -112,7 +112,7 @@ void MotorElectricoController::actualizarMotor(int id, String^ estado, float pot
 }
 
 // Método para eliminar un motor eléctrico por su ID
-void MotorElectricoController::eliminarMotor(int id) {
+void MotorElectricoController::eliminarMotorElectrico(int id) {
 	List<MotorElectrico^>^ listaMotores = listarTodos(); // Obtiene la lista de motores eléctricos
 	// Busca el motor a eliminar
 	for (int i = 0; i < listaMotores->Count; i++) {

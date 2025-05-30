@@ -7,16 +7,16 @@ namespace SistemaGestionOperacionesModel {
         this->idEstacion = 0;
         this->estado = "";
         this->listaDispositivo = gcnew List<Dispositivo^>();
-        this->experimento = gcnew Experimento();
+        this->listaExperimento = gcnew List<Experimento^>();
     }
 
     // Constructor con parámetros
-    EstacionControl::EstacionControl(int idEstacion, String^ estado, List<Dispositivo^>^ listaDispositivo, Experimento^ experimento)
+    EstacionControl::EstacionControl(int idEstacion, String^ estado, List<Dispositivo^>^ listaDispositivo, List<Experimento^>^ listaExperimento)
     {
         this->idEstacion = idEstacion;
         this->estado = estado;
         this->listaDispositivo = listaDispositivo;
-        this->experimento = experimento;
+        this->listaExperimento = listaExperimento;
     }
 
     // Métodos GET
@@ -35,9 +35,9 @@ namespace SistemaGestionOperacionesModel {
         return this->listaDispositivo;
     }
 
-    Experimento^ EstacionControl::getExperimento()
+    List<Experimento^>^ EstacionControl::getListaExperimento()
     {
-        return this->experimento;
+        return this->listaExperimento;
     }
 
     // Métodos SET
@@ -56,9 +56,9 @@ namespace SistemaGestionOperacionesModel {
         this->listaDispositivo = listaDispositivo;
     }
 
-    void EstacionControl::setExperimento(Experimento^ experimento)
+    void EstacionControl::setListaExperimento(List<Experimento^>^ listaExperimento)
     {
-        this->experimento = experimento;
+        this->listaExperimento = listaExperimento;
     }
 
     //Metodos generales

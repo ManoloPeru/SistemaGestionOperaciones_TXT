@@ -9,11 +9,11 @@ namespace SistemaGestionOperacionesController {
 	public:
 		MotorElectricoController();
 		List<MotorElectrico^>^ listarTodos();
-		MotorElectrico^ buscarMotorexid(int id);
-		List<MotorElectrico^>^ buscarMotorexEstado(String^ estado);
-		void agregarMotor(int id, String^ estado, float potencia, float velocidadRPM);
+		MotorElectrico^ buscarMotorElectricoxId(int id);
+		List<MotorElectrico^>^ buscarMotorElectricoxEstado(String^ estado);
+		void agregarMotorElectrico(int id, String^ estado, float potencia, float velocidadRPM);
 		void escribirArchivo(List<MotorElectrico^>^ listaMotores);
-		void actualizarMotor(int id, String^ estado, float potencia, float velocidadRPM);
-		void eliminarMotor(int id);
+		void actualizarMotorElectrico(int id, String^ estado, float potencia, float velocidadRPM);
+		void eliminarMotorElectrico(int id);
 	};
 }
